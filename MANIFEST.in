@@ -1,0 +1,3 @@
+graft members/templates
+graft members/static
+include members/schema.sql

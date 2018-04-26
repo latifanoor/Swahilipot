@@ -1,0 +1,10 @@
+MANIFEST.in
+members/__init__.py
+members/members.py
+members/schema.sql
+members/templates/entries.html
+swahilipot.egg-info/PKG-INFO
+swahilipot.egg-info/SOURCES.txt
+swahilipot.egg-info/dependency_links.txt
+swahilipot.egg-info/requires.txt
+swahilipot.egg-info/top_level.txt

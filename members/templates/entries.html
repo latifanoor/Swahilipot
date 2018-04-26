@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Swahilipot Members</title>
+
+	<style>
+		table {
+		    font-family: arial, sans-serif;
+		    border-collapse: collapse;
+		    width: 100%;
+		}
+
+		td, th {
+		    border: 1px solid #dddddd;
+		    text-align: left;
+		    padding: 8px;
+		}
+
+		tr:nth-child(even) {
+		    background-color: #dddddd;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 style="color:green;">SWAHILI POT HUB</h1>
+	<h3 style="color:red;">Members form</h3>
+	
+	<form action="{{ url_for('add_entry') }}" method=post class=add-entry>
+	  Fullname: <input type=text size=30 name=fullname><br>
+	  Ocupation: <input type=text size=30 name=ocupation><br>
+	  Phone_number: <input type=text size=30 name=phone_number><br>
+	  Gender: <input type=text size=30 name=gender><br>
+	  <!-- Text: <textarea name=text rows=5 cols=40></textarea> -->
+	  <input type=submit value=submit>
+	</form>
+
+	<table>
+	  <tr>
+	    <th>fullname</th>
+	    <th>phone_number</th>
+	    <th>Ocupation</th>
+	    <th>Gender</th>
+	  </tr>
+	  {% for entry in entries %}
+	  <tr>
+	  		<td>{{entry.fullname}}</td>
+	  		<td>{{entry.phone_number}}</td>
+	  		<td>{{entry.ocupation}}</td>
+	  		<td>{{entry.gender}}</td>
+	  </tr>
+	  {%endfor%}
+	</table>
+</body>
+</html>
+
+
