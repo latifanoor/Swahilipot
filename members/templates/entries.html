@@ -29,7 +29,8 @@
 
     Create favorable environment for the youth to innovate through Arts and Technology.
     Build sustainable solutions that enhance transformation in the community.
-    Provide a space where peer to peer training is conducted and partnerships are drawn</p>
+	Provide a space where peer to peer training is conducted and partnerships are drawn</p>
+	<img src="static/tec.jpg"" alt="technology" width="500" height="377">
 	<form action="{{ url_for('add_entry') }}" method=post class=add-entry>
 	  Fullname: <input type=text size=30 name=fullname><br>
 	  Ocupation: <input type=text size=30 name=ocupation><br>
@@ -41,10 +42,10 @@
 
 	<table>
 	  <tr>
-	    <th>fullname</th>
-	    <th>phone_number</th>
-	    <th>Ocupation</th>
-	    <th>Gender</th>
+	    <th style="color:blueviolet;">fullname</th>
+	    <th style="color:blueviolet;">Phone_number</th>
+	    <th style="color:blueviolet;">Ocupation</th>
+	    <th style="color:blueviolet;">Gender</th>
 	  </tr>
 	  {% for entry in entries %}
 	  <tr>
